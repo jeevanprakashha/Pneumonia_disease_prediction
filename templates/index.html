@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chest X-Ray Analysis</title>
+    <link rel="stylesheet" type="text/css" href="/static/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chest X-Ray Analysis</h1>
+        <p>Upload a chest X-ray image to analyze for pneumonia.</p>
+        
+        <!-- Form for image upload -->
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Analyze Image</button>
+        </form>
+    </div>
+</body>
+</html>
